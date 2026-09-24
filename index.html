@@ -35,7 +35,7 @@ const $=id=>document.getElementById(id);
 const APPS=["SOLVE","CODE","CLOCK","CALC","NOTES"],N=APPS.length,STEP=2*Math.PI/N;
 let muted=false;
 // ---------- voice (British) ----------
-const TTS_URL="https://YOUR-WORKER.workers.dev/tts"; // <- paste your worker address here, ending in /ttslet cur=null,spk=0;
+const TTS_URL="https://withered-moon-03cf.jarvismetalman.workers.dev/ttslet cur=null, spk=0"; // <- paste your worker address here, ending in /ttslet cur=null,spk=0;
 function browserSpeak(t){
   if(!window.speechSynthesis)return;
   try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t),v=speechSynthesis.getVoices();
